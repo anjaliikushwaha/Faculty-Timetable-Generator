@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B18B32F1-9805-4B7D-ADEE-97486C302D21}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Scheduler</RootNamespace>
+    <AssemblyName>Controller</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SchedulerMainDemo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Scheduler.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsCon.cs" />
+    <Compile Include="clsSchedule.cs" />
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageSubject.Designer.cs">
+      <DependentUpon>frmManageSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacultyAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacultyAE.Designer.cs">
+      <DependentUpon>frmFacultyAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacultySchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacultySchedule.Designer.cs">
+      <DependentUpon>frmFacultySchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageSections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageSections.Designer.cs">
+      <DependentUpon>frmManageSections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoomAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoomAE.Designer.cs">
+      <DependentUpon>frmRoomAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoomSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScheduler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScheduler.Designer.cs">
+      <DependentUpon>frmScheduler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetActiveSY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetActiveSY.Designer.cs">
+      <DependentUpon>frmSetActiveSY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubjectOffered.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubjectOffered.Designer.cs">
+      <DependentUpon>frmSubjectOffered.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSectionAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSectionAE.Designer.cs">
+      <DependentUpon>frmSectionAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSectionDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSectionDetails.Designer.cs">
+      <DependentUpon>frmSectionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubjectAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubjectAE.Designer.cs">
+      <DependentUpon>frmSubjectAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSYAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSYAE.Designer.cs">
+      <DependentUpon>frmSYAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoomSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomSchedule.Designer.cs">
+      <DependentUpon>RoomSchedule.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacultyAE.resx">
+      <DependentUpon>frmFacultyAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacultySchedule.resx">
+      <DependentUpon>frmFacultySchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageSections.resx">
+      <DependentUpon>frmManageSections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageSubject.resx">
+      <DependentUpon>frmManageSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoomAE.resx">
+      <DependentUpon>frmRoomAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoomSchedule.resx">
+      <DependentUpon>frmRoomSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScheduler.resx">
+      <DependentUpon>frmScheduler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetActiveSY.resx">
+      <DependentUpon>frmSetActiveSY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubjectOffered.resx">
+      <DependentUpon>frmSubjectOffered.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSectionAE.resx">
+      <DependentUpon>frmSectionAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSectionDetails.resx">
+      <DependentUpon>frmSectionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubjectAE.resx">
+      <DependentUpon>frmSubjectAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSYAE.resx">
+      <DependentUpon>frmSYAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RoomSchedule.resx">
+      <DependentUpon>RoomSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\scheduling.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Education.ico" />
+    <Content Include="SchedulerMainDemo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
