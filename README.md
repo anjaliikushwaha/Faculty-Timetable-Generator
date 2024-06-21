@@ -1,6 +1,6 @@
 Run Project<br>
-MDI form will open
-Click On Class Rooms Icon ------>	Class Room form will open
+MDI form will open<br>
+Click On Class Rooms Icon ------>	Class Room form will open<br>
 Already added Class Rooms will display.
 To add New Class Room Right click and Select Add New Entry
 Enter Building Name , Room No , Capacity and click on Save.
